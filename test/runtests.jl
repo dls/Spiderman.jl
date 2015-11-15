@@ -1,5 +1,11 @@
 using Spiderman
+using Gumbo
 using Base.Test
 
-# write your own tests here
-@test 1 == 1
+# testing helpers
+t(html) =
+    parsehtml(html).root[2][1]
+
+include("css_tests.jl")
+include("helper_tests.jl")
+include("examples.jl")
