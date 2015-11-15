@@ -1,5 +1,11 @@
 # Spiderman.jl
 
+Linux, OSX: [![Build Status](https://travis-ci.org/dls/Spiderman.jl.svg?branch=master)](https://travis-ci.org/dls/Spiderman.jl)
+
+Windows: [![Build status](https://ci.appveyor.com/api/projects/status/v7nkq6hlq6khutuf?svg=true)](https://ci.appveyor.com/project/dls/spiderman-jl)
+
+[![codecov.io](http://codecov.io/github/dls/Spiderman.jl/coverage.svg?branch=master)](http://codecov.io/github/dls/Spiderman.jl?branch=master)
+
 Your friendly neighborhood webscraping library.
 
 Spiderman provides a
