@@ -1,5 +1,7 @@
 module Spiderman
 using Gumbo
+using Requests
+using AbstractTrees
 import HTTPClient
 
 include("css.jl")

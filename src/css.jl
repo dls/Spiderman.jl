@@ -8,10 +8,10 @@ getattr_safe(n :: HTMLNode, a :: AbstractString) = get(n.attributes, a, no_attr_
 tag_safe(n :: HTMLText) = no_attr_uuid
 tag_safe(n :: HTMLNode) = tag(n)
 
-abstract GumboPred
+abstract type GumboPred end
 
 immutable IsTag <: GumboPred; tag; end
-IsTag(t :: AbstractString) = IsTag(symbol(t))
+IsTag(t :: AbstractString) = IsTag(Symbol(t))
 matchp(p :: IsTag, n :: HTMLNode) = tag_safe(n) == p.tag
 ==(a :: IsTag, b :: IsTag) = a.tag == b.tag
 

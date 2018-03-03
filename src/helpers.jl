@@ -2,7 +2,7 @@
 function text_join{T <: HTMLNode}(ns :: Array{T})
     output = []
     for n=ns
-        for e=preorder(n)
+        for e=AbstractTrees.PreOrderDFS(n)
             if typeof(e) == HTMLText
                 push!(output, text(e))
             end
