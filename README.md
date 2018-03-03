@@ -27,7 +27,6 @@ by tag name, class, and id. Extending it is relatively simple. If you
 do, you are strongly urged to add some tests, and send me a pull
 request :)
 
-
 # Examples
 
 Fetch the Wikipedia homepage, parse it, and select the headlines from
@@ -72,7 +71,7 @@ the css query is removed from your loops and functions.
 # Spiderman's HTTP Client
 
 Spiderman's httpclient is a wrapper around
-[HTTPClient.jl](https://github.com/JuliaWeb/HTTPClient.jl) (which in
+[Requests.jl](https://github.com/JuliaWeb/Requests.jl) (which in
 turn is a wrapper around libcurl). It automatically retries up to five
 times in the event of a 503 error, or a socket read timeout (both of
 which happen with distressing frequency when scraping content from the
